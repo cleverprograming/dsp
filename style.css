@@ -203,7 +203,7 @@ header {
   width: 80%;
 }
 .progress-line .bootstrap {
-  width: 50%;
+  width: 100%;
 }
 .progress-line .javascript {
   width: 70%;
