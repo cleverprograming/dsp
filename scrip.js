@@ -37,24 +37,3 @@ $(document).ready(function () {
         } // End if
     });
 });
-<!-- EmailJS SDK -->
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  (function () {
-    emailjs.init("6dKZQLAQF2HS4aIaE"); // <-- Replace with your EmailJS Public Key
-  })();
-</script>
-
-<script>
-  document.getElementById("contact-form").addEventListener("submit", function (e) {
-    e.preventDefault();
-    emailjs.sendForm("service_wekx2pp", "template_d9hxvby", this)
-      .then(function () {
-        alert("Message sent successfully!");
-        document.getElementById("contact-form").reset();
-      }, function (error) {
-        alert("Failed to send message. Please try again!");
-        console.error(error);
-      });
-  });
-</script>
