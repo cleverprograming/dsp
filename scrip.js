@@ -41,14 +41,14 @@ $(document).ready(function () {
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
   (function () {
-    emailjs.init("YOUR_PUBLIC_KEY"); // <-- Replace with your EmailJS Public Key
+    emailjs.init("6dKZQLAQF2HS4aIaE"); // <-- Replace with your EmailJS Public Key
   })();
 </script>
 
 <script>
   document.getElementById("contact-form").addEventListener("submit", function (e) {
     e.preventDefault();
-    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+    emailjs.sendForm("service_wekx2pp", "template_d9hxvby", this)
       .then(function () {
         alert("Message sent successfully!");
         document.getElementById("contact-form").reset();
